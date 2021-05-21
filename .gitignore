@@ -2,10 +2,10 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Aa]ssets/IP_Cameras/
-/[Aa]ssets/PBR Material Bundle Vol1/
-/[Aa]ssets/ステージ内の小物/
-/[Ll]ibrary/
+/[Aa]ssets/IP_Cameras/Materials/
+/[Aa]ssets/PBR Material Bundle Vol1/Ultimate Material Pack 1-2/
+/[Aa]ssets/ステージ内の小物/工具/
+/[Ll]ibrary/Artifacts/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/

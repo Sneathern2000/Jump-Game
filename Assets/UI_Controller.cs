@@ -18,7 +18,7 @@ public class UI_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(raypoint.ItemID !=0 || raypoint.SwichID != 0)
+        if (raypoint.ItemID != 0 || raypoint.SwichID != 0)
         {
             Point.SetActive(true);
             if (raypoint.SwichID != 0) frontOjName.text = SwitchName[raypoint.SwichID];

@@ -5,7 +5,7 @@ using UnityEngine;
 public class teleport : MonoBehaviour
 {
     private GameObject player;
-    [SerializeField] GameObject teleportpoint;
+    [SerializeField] Savepoint Savepoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class teleport : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            player.transform.position = teleportpoint.transform.position;
+            player.transform.position = Savepoint.Saveposition;
         }
 
         if(other.gameObject.tag == "OBJ")

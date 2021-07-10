@@ -6,6 +6,7 @@ public class Tracking_camera : MonoBehaviour
 {
     [SerializeField] private GameObject child;
     [SerializeField] private GameObject Player;
+    [SerializeField] private float disply;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +16,8 @@ public class Tracking_camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    void OnTriggerStay(Collider other)
-    {
-        if(other.gameObject.tag == "Player")
+        var distance = Vector3.Distance(transform.position, Player.transform.position);
+        if (distance <= disply)
         {
             child.transform.LookAt(Player.transform);
         }
